@@ -23,6 +23,190 @@
       --grad-r:  linear-gradient(135deg, #004ac6 0%, #712ae2 100%);
     }
 
+    /* Dark Theme */
+body.dark-mode{
+  background:#0f172a;
+  color:#f8fafc;
+}
+
+body.dark-mode #navbar{
+  background:rgba(15,23,42,0.9);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+body.dark-mode .theme-toggle{
+  background:#1e293b;
+  border-color:rgba(255,255,255,0.1);
+}
+
+body.dark-mode .nav-links a,
+body.dark-mode .section-subtitle,
+body.dark-mode .hero-sub,
+body.dark-mode .project-desc,
+body.dark-mode .about-text p,
+body.dark-mode .contact-desc,
+body.dark-mode .footer-copy{
+  color:#cbd5e1;
+}
+
+body.dark-mode .hero-h1,
+body.dark-mode .section-title,
+body.dark-mode .contact-big-h,
+body.dark-mode .project-name,
+body.dark-mode .about-text h2{
+  color:#f8fafc;
+}
+body.dark-mode .btn-outline{
+  color: #fff;
+  border-color: rgba(255,255,255,0.4);
+}
+body.dark-mode #about,
+body.dark-mode #contact,
+body.dark-mode #footer-main{
+  background:#111827;
+}
+
+body.dark-mode #skills,
+body.dark-mode #education,
+body.dark-mode #projects{
+  background:#0f172a;
+}
+
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .about-card,
+body.dark-mode .edu-card,
+body.dark-mode .contact-form-wrap{
+  background:#1e293b;
+  border-color:rgba(255,255,255,0.08);
+}
+body.dark-mode .about-card .card-num{
+  color: #ffffff;
+}
+
+body.dark-mode .edu-school{
+  color: #cbd5e1;
+}
+
+/* Skills */
+body.dark-mode .skill-card-head h3{
+  color: #ffffff;
+}
+
+body.dark-mode .skill-tag{
+  background: rgba(255,255,255,0.08);
+  color: #cbd5e1;
+}
+
+/* Contact */
+body.dark-mode .contact-info-label{
+  color: #94a3b8;
+}
+
+body.dark-mode .contact-info-value{
+  color: #ffffff;
+}
+
+/* Footer */
+body.dark-mode .footer-brand h3,
+body.dark-mode .footer-links h4,
+body.dark-mode .footer-bottom-logo{
+  color: #ffffff;
+}
+
+body.dark-mode .footer-brand p,
+body.dark-mode .footer-links a,
+body.dark-mode .footer-copy{
+  color: #cbd5e1;
+}
+body.dark-mode .form-group label{
+  color: #e2e8f0;
+}
+body.dark-mode .footer-links-row a{
+  color: #cbd5e1;
+}
+
+body.dark-mode .footer-links-row a:hover{
+  color: #ffffff;
+}
+body.dark-mode .footer-links a{
+  color: #cbd5e1;
+}
+
+body.dark-mode .footer-links a:hover{
+  color: #ffffff;
+}
+body.dark-mode .edu-year{
+  color: #60a5fa; /* brighter blue */
+}
+
+body.dark-mode .edu-year.purple{
+  color: #a855f7; /* brighter purple */
+}
+
+body.dark-mode .edu-year.teal{
+  color: #2dd4bf; /* brighter teal */
+}
+body.dark-mode .edu-badge{
+  background: rgba(96,165,250,0.15);
+  color: #60a5fa;
+}
+
+body.dark-mode .edu-badge.purple{
+  background: rgba(168,85,247,0.15);
+  color: #c084fc;
+}
+
+body.dark-mode .edu-badge.teal{
+  background: rgba(45,212,191,0.15);
+  color: #5eead4;
+}
+body.dark-mode .edu-degree{
+  color: #ffffff;
+}
+
+body.dark-mode .edu-school{
+  color: #cbd5e1;
+}
+body.dark-mode .tag-blue{
+  background: rgba(59,130,246,0.35);
+  color: #93c5fd;
+}
+
+body.dark-mode .tag-purple{
+  background: rgba(168,85,247,0.35);
+  color: #d8b4fe;
+}
+
+body.dark-mode .tag-teal{
+  background: rgba(20,184,166,0.35);
+  color: #99f6e4;
+}
+body.dark-mode .about-card .card-label{
+  color: #cbd5e1;
+}
+body.dark-mode .edu-degree{
+  color: #ffffff;
+}
+body.dark-mode input,
+body.dark-mode textarea{
+  background:#0f172a;
+  color:#fff;
+  border-color:rgba(255,255,255,0.1);
+}
+
+body.dark-mode .mobile-menu{
+  background:#111827;
+}
+.moon-icon {
+  color: #facc15; /* Yellow */
+}
+
+body.dark-mode .moon-icon {
+  color: #ffd700;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.6));
+}
+
     /* ─── Utility ──────────────────────────────────────────── */
     .grad-text {
       background: var(--grad);
@@ -815,3 +999,47 @@
     .form-group label{
       font-weight: 500;
     }
+/* Theme Toggle Button */
+.theme-toggle{
+  width:48px;
+  height:48px;
+  border:none;
+  border-radius:50%;
+  background:#fff;
+  border:1px solid rgba(195,198,215,0.4);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.theme-toggle:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.theme-toggle svg{
+  width:22px;
+  height:22px;
+  color:var(--dark);
+  position:absolute;
+  transition:all 0.3s ease;
+}
+
+.moon-icon{
+  opacity:0;
+  transform:rotate(90deg) scale(0.5);
+}
+
+body.dark-mode .sun-icon{
+  opacity:0;
+  transform:rotate(-90deg) scale(0.5);
+}
+
+body.dark-mode .moon-icon{
+  opacity:1;
+  transform:rotate(0) scale(1);
+}
