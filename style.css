@@ -1062,8 +1062,36 @@ body.dark-mode .moon-icon {
     justify-content:center;
   }
 
+  .hero-img-wrap{
+    width:300px;
+    margin:auto;
+  }
+
   .float-badge{
-    display:none;
+    display:flex;
+    padding:8px 12px;
+    font-size:12px;
+    gap:6px;
+  }
+
+  .float-badge img{
+    width:18px;
+    height:18px;
+  }
+
+  .float-badge-react{
+    top:-10px;
+    left:-5px;
+  }
+
+  .float-badge-node{
+    top:25%;
+    right:-10px;
+  }
+
+  .float-badge-mongo{
+    bottom:10px;
+    left:-10px;
   }
 
   #about{
@@ -1149,6 +1177,31 @@ body.dark-mode .moon-icon {
 ================================= */
 @media (max-width:480px){
 
+    .hero-img-wrap{
+    width:260px;
+  }
+
+  .float-badge{
+    padding:6px 10px;
+    font-size:11px;
+  }
+
+  .float-badge img{
+    width:16px;
+    height:16px;
+  }
+
+  .float-badge-react{
+    left:0;
+  }
+
+  .float-badge-node{
+    right:0;
+  }
+
+  .float-badge-mongo{
+    left:0;
+  }
   .container{
     padding:0 16px;
   }
